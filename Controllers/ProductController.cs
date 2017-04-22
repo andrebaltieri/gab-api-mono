@@ -19,6 +19,10 @@ namespace Gab.Controllers
         [Route("products")]
         public Product Post([FromBody]Product product)
         {
+
+
+
+            // Teste
             _context.Products.Add(product);
             _context.SaveChanges();
             return product;
